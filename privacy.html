@@ -9,41 +9,88 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="tagline">The short version: we collect nothing.</p>
+  <p class="tagline">The short version: Solo keeps your ledger on your device and sends it nowhere. We don't collect it.</p>
   <div class="rule-mark"></div>
   <nav><a href="./">Support</a><a href="privacy">Privacy policy</a></nav>
 
-  <h2>What Solo stores</h2>
-  <p>Your trades, journal entries, and settings are stored only on your device, in the
-     app's local database. Solo has no servers. Nothing you enter is transmitted anywhere.</p>
+  <h2>Who we are</h2>
+  <p>Solo is made by Mark Martin, Canada (shown as the seller on the App Store), who is
+     responsible for this policy. Privacy questions and requests:
+     <a href="mailto:hello@clockmath.com">hello@clockmath.com</a>.</p>
 
-  <h2>What Solo collects</h2>
-  <p>Nothing. Solo contains no analytics, no tracking, no advertising SDKs, no
-     third-party code that phones home, and it makes no network requests. There are no
-     accounts and no sign-up.</p>
+  <h2>What Solo stores, and where</h2>
+  <p>Your trades, journal entries (including the emotions you tag), playbooks and
+     settings are stored in the app's own storage on your device. Solo has no servers
+     and no accounts, and it makes no network requests: the app itself sends none of
+     this anywhere.</p>
+  <p>Two things can move a copy off the device, both under your control:</p>
+  <ul>
+    <li><strong>Device backups.</strong> If you back up your device to iCloud or a
+        computer, the backup includes Solo's data, as it does for most apps. That is
+        handled by Apple and your device settings, not by Solo.</li>
+    <li><strong>Exports.</strong> Settings &gt; Export ledger creates a CSV and a JSON
+        file and opens the share sheet. The files go only where you send them. Solo
+        deletes its temporary copies when the share sheet closes (and, from version
+        0.2.1, again at the next launch, in case it was interrupted).</li>
+  </ul>
 
-  <h2>On-device intelligence</h2>
-  <p>When you use natural-language trade entry on a supported device, the text is parsed
-     by Apple Intelligence on the device itself. Your text is not sent to us or to any
-     third party by Solo.</p>
+  <h2>What we collect</h2>
+  <p>Nothing through the app. Solo contains no analytics, no advertising, no tracking
+     and no third-party SDKs. The App Store privacy label reads "Data Not Collected".</p>
+  <p>If you have chosen in your device settings to share analytics with app developers,
+     Apple may send us crash reports for Solo. These come from Apple, under Apple's
+     privacy policy, and contain technical details about the crash, not your ledger.</p>
+
+  <h2>Trade entry ("Describe the trade")</h2>
+  <p>On devices with Apple Intelligence, the text you type is read by Apple's on-device
+     model. On other devices, a parser built into Solo reads it. Either way, Solo doesn't
+     send the text off the device.</p>
 
   <h2>Imports</h2>
-  <p>CSV files you import are read locally and stored in the app's local database. They
-     are never uploaded.</p>
+  <p>A CSV you import is read on the device and its trades are saved to Solo's storage.
+     Solo doesn't upload it.</p>
+
+  <h2>Face ID and passcode</h2>
+  <p>If you turn on the ledger lock, iOS checks your Face ID, Touch ID or passcode and
+     tells Solo only whether it succeeded. Solo never receives your biometric data or
+     your passcode.</p>
+
+  <h2>Reminders</h2>
+  <p>The optional daily reminder is a local notification scheduled on your device, with
+     fixed text. No server is involved.</p>
 
   <h2>Deleting your data</h2>
-  <p>Delete a trade in the app to remove it and its journal. Deleting the app removes
-     the entire ledger from your device.</p>
+  <p>Trades you logged by hand can be deleted one at a time from the trade's page.
+     From version 0.2.1, Settings &gt; Erase all data deletes every trade, journal entry
+     and playbook in Solo and resets its settings, after Face ID or your passcode. In
+     earlier versions, imported trades are removed by deleting the app. Deleting the app
+     removes all of its data from the device. Copies in device backups, or in exports
+     you've shared, are not affected; delete those where they're kept.</p>
+
+  <h2>Support requests</h2>
+  <p>The <a href="https://github.com/clockmath/solo-support/issues">support tracker</a>
+     is public on GitHub, so anything posted there can be seen by anyone. Please don't
+     post trade figures, screenshots of your ledger or personal details there. For
+     anything private, email <a href="mailto:hello@clockmath.com">hello@clockmath.com</a>.
+     We use what you send only to answer you, and keep emails only as long as needed to
+     do so.</p>
+
+  <h2>Your rights</h2>
+  <p>We hold no personal data from the app, so there is nothing of yours on our side to
+     access, correct or delete, except a support email you send us. Ask at the address
+     above and we'll answer within 30 days. You may also complain to your local data
+     protection authority.</p>
+
+  <h2>Children</h2>
+  <p>Solo is not directed at children, and we don't knowingly receive information from
+     them.</p>
 
   <h2>Changes</h2>
-  <p>If a future version ever changes any of the above — for example, optional iCloud
-     sync — this policy will be updated first, and any such feature will be opt-in.</p>
+  <p>If a future version changes any of the above, for example by adding optional sync,
+     this policy will be updated before that version is released, and the date below
+     will change.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy: open an issue on the
-     <a href="https://github.com/clockmath/solo-support/issues">support tracker</a>.</p>
-
-  <footer>Last updated: August 26, 2026 · Solo is made by clockmath.</footer>
+  <footer>Last updated: October 1, 2026 (covers Solo 0.2.0 and 0.2.1) · Solo is made by clockmath.</footer>
 </main>
 </body>
 </html>

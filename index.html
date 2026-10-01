@@ -16,28 +16,39 @@
   <h2>Support</h2>
   <p>Questions, bug reports, or feature requests are welcome on the
      <a href="https://github.com/clockmath/solo-support/issues">issue tracker</a>.
-     Plain words are fine — screenshots help.</p>
+     It's public: please leave out trade figures, ledger screenshots and personal
+     details. For anything private, email
+     <a href="mailto:hello@clockmath.com">hello@clockmath.com</a>.</p>
 
   <h2>Common questions</h2>
   <div class="card">
     <p><strong>Where is my data stored?</strong><br>
-    Entirely on your device. Solo has no servers, no account, and no cloud component.
-    Deleting the app deletes your ledger — export or back up your device first.</p>
+    On your device, in Solo's own storage. Solo has no servers, no account, and no cloud
+    component, and it sends nothing anywhere. Your device's own backups (iCloud or a
+    computer) include it, and an export goes wherever you share it. Deleting the app
+    deletes the ledger from the device, so export it first if you want a copy.</p>
   </div>
   <div class="card">
     <p><strong>How does the natural-language entry work?</strong><br>
-    On devices that support Apple Intelligence, the parsing runs on-device — your text
-    never leaves your phone. On other devices, a built-in parser handles common phrasings.</p>
+    On devices with Apple Intelligence, your text is read by Apple's on-device model.
+    On other devices, a built-in parser reads common phrasings. Either way, Solo doesn't
+    send the text anywhere. Check the filled-in form before you record.</p>
   </div>
   <div class="card">
     <p><strong>Which broker exports can I import?</strong><br>
-    Wealthsimple activity exports (<span class="mono">activities-export*.csv</span>).
-    Re-importing is safe: duplicates are skipped and manual entries are never touched.</p>
+    Wealthsimple activity exports (<span class="mono">activities-export*.csv</span>);
+    Solo reads the option trades in them. Rows already imported are skipped.
+    From version 0.2.1, if a trade you logged by hand matches an imported fill (same
+    contract, side, day and number of contracts), Solo keeps one copy: your entry, with
+    the broker's price and fees, and your journal. In 0.2.0, a trade both logged by hand
+    and imported is counted twice; 0.2.1 offers to merge these. Solo is not affiliated
+    with Wealthsimple.</p>
   </div>
   <div class="card">
     <p><strong>Is Solo financial advice?</strong><br>
     No. Solo is a journal. It records what you did and helps you reflect on it.
-    It does not recommend, predict, or execute trades.</p>
+    It does not recommend, predict, or execute trades. Check its figures against your
+    broker's statements before you rely on them.</p>
   </div>
 
   <footer>Solo is made by clockmath. · <a href="privacy">Privacy policy</a></footer>
