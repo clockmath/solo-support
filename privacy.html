@@ -29,10 +29,22 @@
         computer, the backup includes Solo's data, as it does for most apps. That is
         handled by Apple and your device settings, not by Solo.</li>
     <li><strong>Exports.</strong> Settings &gt; Export ledger creates a CSV and a JSON
-        file and opens the share sheet. The files go only where you send them. Solo
+        file (and, from version 0.2.2, a third file holding any chart screenshots) and
+        opens the share sheet. The files go only where you send them. Solo
         deletes its temporary copies when the share sheet closes (and, from version
         0.2.1, again at the next launch, in case it was interrupted).</li>
   </ul>
+  <p>From version 0.2.2, Solo asks iOS to keep its ledger and chart files encrypted
+     whenever the device is locked. This relies on the device having a passcode.</p>
+
+  <h2>Chart screenshots</h2>
+  <p>From version 0.2.2 you can attach images to a trade. You choose them in the
+     system photo picker, which runs outside Solo: Solo can't see your photo library,
+     only the image you pick. Solo keeps a resized copy of the picture in its own
+     storage on your device, without the original's location or other metadata, and
+     doesn't change or delete the original in Photos. The copies are covered by
+     everything above: they stay on the device, are included in device backups and
+     in exports, and are sent nowhere by Solo.</p>
 
   <h2>What we collect</h2>
   <p>Nothing through the app. Solo contains no analytics, no advertising, no tracking
@@ -62,7 +74,9 @@
   <h2>Deleting your data</h2>
   <p>Trades you logged by hand can be deleted one at a time from the trade's page.
      From version 0.2.1, Settings &gt; Erase all data deletes every trade, journal entry
-     and playbook in Solo and resets its settings, after Face ID or your passcode. In
+     and playbook in Solo (and, from 0.2.2, every chart screenshot) and resets its
+     settings, after Face ID or your passcode. Removing a chart from a trade, or
+     deleting the trade, deletes Solo's copy of it. In
      earlier versions, imported trades are removed by deleting the app. Deleting the app
      removes all of its data from the device. Copies in device backups, or in exports
      you've shared, are not affected; delete those where they're kept.</p>
@@ -90,7 +104,7 @@
      this policy will be updated before that version is released, and the date below
      will change.</p>
 
-  <footer>Last updated: October 1, 2026 (covers Solo 0.2.0 and 0.2.1) · Solo is made by clockmath.</footer>
+  <footer>Last updated: October 25, 2026 (covers Solo 0.2.0 to 0.2.2) · Solo is made by clockmath.</footer>
 </main>
 </body>
 </html>
